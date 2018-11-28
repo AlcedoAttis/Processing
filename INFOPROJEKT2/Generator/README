@@ -1,0 +1,25 @@
+so, hi clemens.
+
+1. Was kann das Ding:
+- Noiseartige, Terraingeneration auf Blockbasis ala Minecraft (bloß in schlecht)
+- Überhänge trotz Noisegrundlage (is richtig billig)
+- Wasser durch gestackt transparente Blöcke*
+- Gras und Erde
+- Möglichkeit glatter Erde trotz volatilem Gras
+- Graueres Gras auf höheren Höhen
+- Globale Bewegung durch Landschaft
+- Drehung um Landschaft
+===> Schau dir einfach mal die imports_and_globals an und ändere nen paar Variablen, damit du nen Gefühl dafür bekommst
+
+*Ist Codetechnisch ok, Laufzeittechnisch richtig Kacke, aber bei größeren Blockzahlen echt schön! Mach besser!
+
+2. Was kann das Ding nicht:
+- Flüssige Bewegung bei großen Größen
+- Rückseiten von Blöcken hinter Wasser malen (siehe Comment bei create_and_draw)
+- irgendeine Sache auf der Oberfläche -> TODO
+   - z.B Steine durch entsprechend skalierte Noisemap die fast überall null ist und nur manchmal nicht: z.B. sowas max(0,noise(x,y)^10-0.5)
+   - z.B Bäume
+   ...
+
+3. Q&A:
+- Ich auf Whatsapp und Telegram
